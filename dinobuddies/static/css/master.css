@@ -1,0 +1,75 @@
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    background-color:white ;
+    border-top : 7px solid red;
+    border-bottom : 1px solid #ccc;
+}
+#title{
+    font-size: large;
+}
+.logo{
+    color: #000;
+    left: 0;
+    width: 6em;
+}
+.nav_container_left{
+    display: flex;
+    align-items: center ;
+    position: relative;
+    
+}
+.nav_container_middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    order:2;
+    padding: 0 1rem;
+
+}
+.nav_container_right{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    order:3;
+    padding: 0 1rem;
+}
+#home{
+    display: block;
+    position: relative;
+    background-color: transparent;
+    border: transparent;
+    cursor : pointer;
+    border:#000 1px transparent;
+    color:#3d3d3d;
+    font-size: 1rem;
+}
+#home:hover{
+    background-color: red;
+    transition: color 500ms ease,background-color 500ms ease,border-color 500ms ease;
+    color: white;
+}
+
+#Profile{
+    display: block;
+    position: relative;
+    background-color: transparent;
+    border: transparent;
+    cursor : pointer;
+    border:#000 1px transparent;
+    color:#3d3d3d;
+    font-size: 1rem;
+}
+#Profile:hover{
+    background-color: red;
+    transition: color 500ms ease,background-color 500ms ease,border-color 500ms ease;
+    color: white;
+}
