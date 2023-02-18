@@ -7,11 +7,13 @@ body{
 }
 nav{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    background-color:white ;
-    border-top : 7px solid red;
-    border-bottom : 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-top: 5px solid red;
+    
 }
 #title{
     font-size: large;
@@ -23,24 +25,17 @@ nav{
 }
 .nav_container_left{
     display: flex;
-    align-items: center ;
-    position: relative;
-    
+    flex-direction: column;
+    margin: 0 0.5em;
 }
 .nav_container_middle{
     display: flex;
     flex-direction: column;
-    align-items: center ;
-    order:2;
-    padding: 0 1rem;
+
 
 }
 .nav_container_right{
     display: flex;
-    align-items: center ;
-    flex-direction: column;
-    order:3;
-    padding: 0 1rem;
 }
 #home{
     display: block;
@@ -50,14 +45,20 @@ nav{
     cursor : pointer;
     border:#000 1px transparent;
     color:#3d3d3d;
-    font-size: 1rem;
+    border-radius: 30px;
+    width: 5em;
 }
 #home:hover{
     background-color: red;
     transition: color 500ms ease,background-color 500ms ease,border-color 500ms ease;
     color: white;
 }
-
+#bell {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
 #Profile{
     display: block;
     position: relative;
@@ -66,7 +67,8 @@ nav{
     cursor : pointer;
     border:#000 1px transparent;
     color:#3d3d3d;
-    font-size: 1rem;
+    border-radius: 30px;
+    width: 5em;
 }
 #Profile:hover{
     background-color: red;
