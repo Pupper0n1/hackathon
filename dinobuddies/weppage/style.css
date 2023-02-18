@@ -1,0 +1,66 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
+header {
+    background-color: #ABC; min-height: 150px;
+}
+
+main {
+    background-color: O#678; min-height: 500px;
+    display: flex; flex-flow: row wrap;
+}
+
+aside:nth-child(1) {
+    flex: 0 0 200px; background-color: pink;
+}
+
+aside:nth-child(3) {
+    flex: 0 0 250px; background-color: #FFC;
+}
+
+article {
+
+    flex: 1 0 auto; background-color: #CFC;
+}
+
+footer {
+
+    background-color: #ABC; min-height: 100px;
+}
+
+
+
+.interactive-bg {
+    height: 100vh;
+    background-color: #00d1b2;
+    -webkit-box-shadow: inset 24px 4px 64px -24px rgba(71,71,71,1);
+    -moz-box-shadow: inset 24px 4px 64px -24px rgba(71,71,71,1);
+    box-shadow: inset 24px 4px 64px -24px rgba(71,71,71,1);
+    padding: 0px;
+  }
+  @media (max-width: 769px) {
+    .interactive-bg{
+      display: none
+    }
+  }
+  
+  .input {
+    border-radius: 50px;
+  }
+  
+  .button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 150px;
+  }
+  
+  .login-logo {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-height: 100px;
+  
+  }
+  
+  .columns{
+    margin: 0px;
+  }
