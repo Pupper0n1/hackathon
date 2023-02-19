@@ -104,7 +104,7 @@ nav {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    
+
 }
 #logout:hover{
     background-color: red;
@@ -138,6 +138,10 @@ nav {
     color: #3d3d3d;
     border-radius: 30px;
     width: 5em;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 
 
 }

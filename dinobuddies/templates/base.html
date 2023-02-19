@@ -29,6 +29,12 @@
                 </div>
                 <a id = "Home"href={% url 'home' %}>Home</a>
             </div>
+            <div class = "nav_container_middle">
+                {% block middle %}
+
+                {% endblock %}
+
+            </div>
             <div class="nav_container_right">
                 {% if user.is_authenticated %}
                 <a id="logout" href={% url 'accounts:logout' %}>Log out</a>
