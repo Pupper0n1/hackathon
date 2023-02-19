@@ -1,10 +1,11 @@
+
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,65 +13,108 @@ nav{
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-top: 5px solid red;
-    
+
 }
-#title{
+#title {
     font-size: large;
 }
-.logo{
+.logo {
     color: #000;
     left: 0;
     width: 6em;
 }
-.nav_container_left{
+.nav_container_left {
     display: flex;
     flex-direction: column;
     margin: 0 0.5em;
 }
-.nav_container_middle{
+.nav_container_middle {
     display: flex;
     flex-direction: column;
 
-
 }
-.nav_container_right{
+.nav_container_right {
     display: flex;
 }
-#home{
+#home {
     display: block;
     position: relative;
     background-color: transparent;
     border: transparent;
-    cursor : pointer;
-    border:#000 1px transparent;
-    color:#3d3d3d;
+    cursor: pointer;
+    border: #000 1px transparent;
+    color: #3d3d3d;
     border-radius: 30px;
     width: 5em;
 }
-#home:hover{
+#home:hover {
     background-color: red;
     transition: color 500ms ease,background-color 500ms ease,border-color 500ms ease;
     color: white;
 }
 #bell {
+    display: block;
     width: 1.5em;
     height: 1.5em;
     margin: 0 0.5em;
     cursor: pointer;
 }
-#Profile{
+#settings{
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+#Profile {
     display: block;
     position: relative;
     background-color: transparent;
     border: transparent;
-    cursor : pointer;
-    border:#000 1px transparent;
-    color:#3d3d3d;
+    cursor: pointer;
+    border: #000 1px transparent;
+    color: #3d3d3d;
     border-radius: 30px;
     width: 5em;
 }
-#Profile:hover{
+#Profile:hover {
     background-color: red;
     transition: color 500ms ease,background-color 500ms ease,border-color 500ms ease;
     color: white;
+}
+#dropdown-content{
+    display: none;
+    top: 15%;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+#settings:hover .dropdown-content {
+    display: block;
+  }
+@media screen and (max-width: 768px ) {
+    nav{
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+    }
+    #dropdown-content{
+        display: none;
+        top: 38%;
+        right:15%;
+        position: absolute;
+        flex-direction: column;
+        z-index: 1;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+
+    }
+    #settings:hover .dropdown-content {
+        display: block;
+      }
 }
