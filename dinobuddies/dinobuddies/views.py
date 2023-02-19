@@ -1,7 +1,7 @@
 from django.views.generic import TemplateView
 
 class GalleryPage(TemplateView):
-    templateName = 'gallery.html'
+    template_name = 'gallery.html'
 
 class GoodbyePage(TemplateView):
     template_name = 'goodbye.html'
