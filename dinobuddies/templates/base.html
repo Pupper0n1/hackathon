@@ -1,55 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Dino Buddies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">  {% comment %} Bulma cdn {% endcomment %}
-	{% load static %}
-    <link rel="stylesheet" href="{% static 'dinobuddies/css/master.css' %}"> 
-</head>
-<body>
-    <nav>
-        <div class="nav_container_left">
-            <img class="logo" src="{% static 'dinobuddies/assets/logo.png' %}">
-            <h1 id="title">Only Dinos</h1>
-        </div>
-        <div class="nav_container_middle">
-            <div class="field">
-                <div class="control">
-                  <div class="select">
-                    <select name="country" placeholder="Select a country">
-                      <option value="" disabled selected>Studying right now</option>
-                      <option value="course1">course1</option>
-                      <option value="course2">course2</option>
-                      <option value="course3">course3</option>
-                    </select>
-                  </div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script src="action.js"></script>
+        <nav>
+            <div class="nav_container_left">
+
+                <div class="nav_container_logo">
+                    <img class="logo" src="logo.png">
+                    <h1 id="title">Only Dinos</h1>
                 </div>
-              </div>
-              
-                
+                <button id="home">Home</button>
             </div>
-            <button id="home" href="{% url 'home' %}">Home</button>
-            <button id="Profile">Profile</button>
-        </div>
-        
-        <div class="nav_container_right">
-            <i id = "bell"><img src = "{% static 'dinobuddies/assets/bell_light.png' %}"></i>
-            <i id = "settings"><img src = "{% static 'dinobuddies/assets/settings_light.png' %}" onclick = "toggler()"></i>
-            <div id="dropdown-content">
-                <p style="cursor: pointer;">Dark Mode</p>
-                <a href="{%}" style = "text-decoration: none; color:black">Login</a>
+            <div class="nav_container_right">
+                <div class="field">
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                name="dropbox"
+                                placeholder="Studying right now"
+                                style="border-radius: 13px;">
+                                <option value="" disabled="disabled" selected="selected">Studying right now</option>
+                                <option value="course1">course1</option>
+                                <option value="course2">course2</option>
+                                <option value="course3">course3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button id="Profile">Profile</button>
+                <button id="login">Login</button>
             </div>
-        </div>
 
-        <ul class='nav navbar -nav navbar-right'>
-            {% if user.is%}
-    </div>
-</nav>
-    {% block content %}
-
-    {% endblock %}
-</body>
+        </nav>
+    </body>
 </html>
