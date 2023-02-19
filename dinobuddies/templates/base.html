@@ -40,9 +40,12 @@
             <i id = "settings"><img src = "{% static 'dinobuddies/assets/settings_light.png' %}" onclick = "toggler()"></i>
             <div id="dropdown-content">
                 <p style="cursor: pointer;">Dark Mode</p>
-                <a href="/Login" style = "text-decoration: none; color:black">Login</a>
+                <a href="{%}" style = "text-decoration: none; color:black">Login</a>
             </div>
         </div>
+
+        <ul class='nav navbar -nav navbar-right'>
+            {% if user.is%}
     </div>
 </nav>
     {% block content %}

@@ -83,7 +83,7 @@ nav {
     color: white;
 }
 #dropdown-content{
-    display: none;
+    display: block;
     top: 15%;
     position: absolute;
     flex-direction: column;
