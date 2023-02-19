@@ -1,71 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Login Box with Bulma</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      /* Custom styles for the login box */
-      .login-box {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #fff;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="section ">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-centered">
-            <div class="login-box box has-background-white has-shadow">
-              <h1 class="title is-4 has-text-centered" style="color: #596869">Login</h1>
-              <form>
-                <div class="field">
-                  <div class="control">
-					<input class="input is-medium is-rounded" type="email" placeholder="user@example.com" autocomplete="username" required />
-				</div>
-                </div>
-                <div class="field">
-                  <div class="control">
-					<input class="input is-medium is-rounded" type="password" placeholder="**********" autocomplete="current-password" required />
-				</div>
-                </div>
-                <div class="field">
-                  <div class="control">
-                    <button class="button is-rounded is-danger is-primary is-fullwidth ">Login</button>
-                  </div>
-                </div>
-              </form>
+    <head>
+        <title>Login Box with Bulma</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Custom styles for the login box */
+            .login-box {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
 
+        <div     class="hero is-fullheight is-fullwidth"     style="background-image: url('rex.png'); background-size: cover;">
 
-			  <nav class="level">
-				<div class="level-item has-text-centered " >
-				  <div>
-					<a href="#"  style="color: #596869" >Forgot Password?</a>
-				  </div>
-				</div>
-				<div class="level-item has-text-centered">
-				  <div>
-					<a href="#"  style="color: #596869">Create an Account</a>
-				  </div>
-				</div>
-			  </nav>
+            <div class="section ">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-centered">
+                            <div class="login-box box has-background-white has-shadow">
+                                <h1 class="title is-4 has-text-centered" style="color: #596869">Login</h1>
+                                <form>
+                                    <div class="field">
+                                        <div class="control">
+                                            <input
+                                                class="input is-medium is-rounded"
+                                                type="email"
+                                                placeholder="user@example.com"
+                                                autocomplete="username"
+                                                required="required"/>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <input
+                                                class="input is-medium is-rounded"
+                                                type="password"
+                                                placeholder="**********"
+                                                autocomplete="current-password"
+                                                required="required"/>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <button class="button is-rounded is-danger is-primary is-fullwidth ">Login</button>
+                                        </div>
+                                    </div>
+                                </form>
 
-			  
+                                <nav class="level">
+                                    <div class="level-item has-text-centered ">
+                                        <div>
+                                            <a href="#" style="color: #596869">Forgot Password?</a>
+                                        </div>
+                                    </div>
+                                    <div class="level-item has-text-centered">
+                                        <div>
+                                            <a href="#" style="color: #596869">Create an Account</a>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
-			<div  class="interactive-bg column has-background-danger ">
-          </div>
+			</div>
 
-        </div>
-      </div>
+        </body>
 
-
-    </div>
-
-
-  </body>
-</html>
+    </html>
