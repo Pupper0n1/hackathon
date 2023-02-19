@@ -27,7 +27,7 @@
                     <img class="logo" src="{% static 'dinobuddies/assets/logo.png' %}">
                     <h1 id="title">Only Dinos</h1>
                 </div>
-                <button id="home">Home</button>
+                <a href={% url 'home' %}>Home</a>
             </div>
             <div class="nav_container_right">
                 {% if user.is_authenticated %}?
