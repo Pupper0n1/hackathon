@@ -17,7 +17,7 @@
         </style>
     </head>
     <body>
-        <div class="hero is-fullheight is-fullwidth" style="background-image: url('rex.png'); background-size: cover;">
+        <div class="hero is-fullheight is-fullwidth" style="background-image: url('rex_log.png'); background-size: cover;">
             <div class="section">
                 <div class="container">
                     <div class="columns is-centered">
@@ -26,42 +26,75 @@
                                 <h1 class="title is-4 has-text-centered" style="color: #596869">Create an Account</h1>
                                 <form>
                                     <div class="field">
+                                        <label class="label has-text-grey">UCID</label>
                                         <div class="control">
                                             <input
                                                 class="input is-medium is-rounded"
                                                 type="text"
-                                                placeholder="Full Name"
-                                                autocomplete="name"
+                                                placeholder="Enter your UCID"
                                                 required="required"/>
                                         </div>
                                     </div>
                                     <div class="field">
+                                        <label class="label has-text-grey">Name</label>
+                                        <div class="control">
+                                            <input
+                                                class="input is-medium is-rounded"
+                                                type="text"
+                                                placeholder="Enter your name"
+                                                required="required"/>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label has-text-grey">Sex</label>
+                                        <div class="control">
+                                            <div class="select is-medium is-rounded">
+                                                <select required="required">
+                                                    <option value="" disabled selected>Select your sex</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label has-text-grey">Major</label>
+                                        <div class="control">
+                                            <input
+                                                class="input is-medium is-rounded"
+                                                type="text"
+                                                placeholder="Enter your major"
+                                                required="required"/>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label has-text-grey">Email</label>
                                         <div class="control">
                                             <input
                                                 class="input is-medium is-rounded"
                                                 type="email"
-                                                placeholder="Email Address"
-                                                autocomplete="username"
+                                                placeholder="Enter your email"
                                                 required="required"/>
                                         </div>
                                     </div>
                                     <div class="field">
+                                        <label class="label has-text-grey">Password</label>
                                         <div class="control">
                                             <input
                                                 class="input is-medium is-rounded"
                                                 type="password"
-                                                placeholder="Password"
-                                                autocomplete="new-password"
+                                                placeholder="Enter your password"
                                                 required="required"/>
                                         </div>
                                     </div>
                                     <div class="field">
+                                        <label class="label has-text-grey">Confirm Password</label>
                                         <div class="control">
                                             <input
                                                 class="input is-medium is-rounded"
                                                 type="password"
-                                                placeholder="Confirm Password"
-                                                autocomplete="new-password"
+                                                placeholder="Confirm your password"
                                                 required="required"/>
                                         </div>
                                     </div>
