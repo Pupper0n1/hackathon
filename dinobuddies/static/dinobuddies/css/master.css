@@ -34,12 +34,14 @@ nav {
 
 }
 .nav_container_left {
+
     display: flex;
+    align-content: center;
 }
 .nav_container_right {
     display: flex;
 }
-#home {
+#Home {
     display: block;
     position: relative;
     background-color: transparent;
@@ -49,18 +51,16 @@ nav {
     color: #3d3d3d;
     border-radius: 30px;
     width: 5em;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
-#home:hover {
+#Home:hover {
     background-color: red;
     transition: color 500ms ease,background-color 500ms ease,border-color 500ms ease;
     color: white;
-}
-#bell {
-    display: block;
-    width: 1.5em;
-    height: 1.5em;
-    margin: 0 0.5em;
-    cursor: pointer;
 }
 #settings{
     display: block;
@@ -86,6 +86,27 @@ nav {
     color: white;
 }
 #login:hover{
+    background-color: red;
+    transition: color 500ms ease,background-color 500ms ease,border-color 500ms ease;
+    color: white;
+}
+#logout{
+    display: block;
+    position: relative;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    border: #000 1px transparent;
+    color: #3d3d3d;
+    border-radius: 30px;
+    width: 5em;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+#logout:hover{
     background-color: red;
     transition: color 500ms ease,background-color 500ms ease,border-color 500ms ease;
     color: white;
