@@ -34,9 +34,14 @@
             <button id="home" href="{% url 'home' %}">Home</button>
             <button id="Profile">Profile</button>
         </div>
+        
         <div class="nav_container_right">
-            <button id="notification">notification</button>
-            <button id="settings">settings</button>
+            <i id = "bell"><img src = "bell_light.png"></i>
+            <i id = "settings"><img src = "settings_light.png" onclick = "toggler()"></i>
+            <div id="dropdown-content">
+                <p style="cursor: pointer;">Dark Mode</p>
+                <a href="/Login" style = "text-decoration: none; color:black">Login</a>
+            </div>
         </div>
     </div>
 </nav>
